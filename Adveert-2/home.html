@@ -1,0 +1,462 @@
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css1/style.css">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="./images/logo.png">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+<title>Adveert</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1200, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+
+        });
+    });
+</script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+<style>
+    input::placeholder
+    {
+        color: gray!important;
+        font-family: Proxima Nova;
+        text-align: ;
+	
+    }
+</style>
+<script>
+    function contactForm() {
+        var emailAlert = document.getElementById('emailAlert');
+        var emailId = document.getElementById('contactEmail');
+        if(!emailId.value){
+            emailAlert.style.visibility = "visible";
+        }
+
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(emailId.value.match(mailformat))
+        {
+
+            emailAlert.innerText = "mail sent";
+            emailAlert.style.color = "RED";
+            emailAlert.style.visibility = "visible";
+        }
+        else
+        {
+            emailAlert.innerText = "Please enter a valid email address!";
+            emailAlert.style.color = "RED";
+            emailAlert.style.visibility = "visible";
+        }
+    }
+
+
+
+
+    function setOnFocus() {
+        var emailAlert = document.getElementById('emailAlert');
+        emailAlert.style.visibility = "hidden";
+    }
+    function loginForm() {
+        var emailAlert = document.getElementById('emailAlert');
+        var emailId = document.getElementById('loginEmail');
+        if (!emailId.value) {
+            emailAlert.style.visibility = "visible";
+        }
+    }
+</script>
+
+<header>
+
+    <a href="#"><img src="./images/mkbhd.png" style="width: 40px;margin-top: 20px;margin-left: 20px" ></a>
+
+    <nav>
+
+        <a href="#" id="menu-icon" ></a>
+
+        <ul >
+
+
+            <li><a href="#Our-Services" >Services</a></li>
+            <li><a href="#About-Us">About-Us</a></li>
+            <li><a href="#Our-Process">Our-Process</a></li>
+            <li><a href="#footer">Contact-Us</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+<section class="header1" style="padding-top: 80px">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6">
+                <h style=" font-family: Proxima Nova;
+    font-size: 56px;
+    line-height: 78px;
+
+    color: #000000;">Authentic, Transparent and Credible Influencer Marketing</h>
+            </div>
+            <div class="col-md-6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <h style=" font-family: Proxima Nova;
+    font-size: 28px;
+    line-height: 45px;
+
+    color: rgba(20, 20, 20, 0.64);
+" >We develop a relationship with influencers and brands in such a way that leads to authentic and long term business growth.</h>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 30px;text-align: center">
+            <div class="col-md-5" id="special-img">
+                <img src="./images/campaign-creators-1166994-unsplash-min.png">
+            </div>
+            <div class="col-md-3" id="special-img">
+                <img src="./images/xtra-inc-1413899-unsplash-min.png" style="padding-top: 30px;">
+            </div>
+            <div class="col-md-4" id="special-img">
+                <img src="./images/william-iven-19843-unsplash-min.png">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="Our-Services" style="padding-top: 140px">
+    <div class="container" >
+        <div style="text-align: center"> <div class="section-text">Our-Services</div></div>
+        <p id="section-p">What can we do for you?</p>
+        <div class="row" style="padding-top: 80px;text-align: center    ">
+
+            <div class="col-md-4" style="background: #FFFFFF;height:400px;
+/* light grey:bg */
+border: 1px solid #F5F5F5;
+box-sizing: border-box;/* card-shadow */
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+ ">
+                <div class="row">
+                    <img src="./images/Vector.png" style="padding: 20px">
+                </div>
+                <div class="row" id="section-inner-text">
+                    <h style="font-family: Proxima Nova;font-size: 32px;line-height: normal;color: #000000;padding: 20px">Consulting</h>
+                </div>
+                <div class="row" id="section-inner-text">
+                    <p style="font-family: Proxima Nova;font-size: 20px;line-height: 32px;color: rgba(20, 20, 20, 0.64);padding-top: 20px; padding-left: 20px; padding-right: 50px;">We strategize, develop and manage effective campaigns for your products and services targeted to achieve specific goals.</p>
+                </div>
+
+            </div>
+            <div class="col-md-4" style="background: #FFFFFF;border: 1px solid #F5F5F5;height:400px;
+box-sizing: border-box;/* card-shadow */
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+">
+                <div class="row" >
+                    <img src="./images/creative.png" style="padding: 20px">
+                </div>
+                <div class="row" id="section-inner-text">
+                    <h style="font-family: Proxima Nova;font-size: 32px;line-height: normal;color: #000000;padding: 20px">Creatives</h>
+                </div>
+                <div class="row" id="section-inner-text">
+                    <p style="font-family: Proxima Nova;font-size: 20px;line-height: 32px;color: rgba(20, 20, 20, 0.64);padding-top: 20px; padding-left: 20px; padding-right: 20px; ">Our in house team deliver incredible content at scale.</p>
+                </div>
+            </div>
+            <div class="col-md-4" style="background: #FFFFFF;height:400px;
+/* light grey:bg */
+border: 1px solid #F5F5F5;
+box-sizing: border-box;/* card-shadow */
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+
+">
+
+
+                <div class="row" >
+                    <img src="./images/influencers.png" style="padding: 20px">
+                </div>
+                <div class="row" id="section-inner-text">
+                    <h style="font-family: Proxima Nova;font-size: 32px;line-height: normal;color: #000000;padding: 20px">Influencers</h>
+                </div>
+                <div class="row" id="section-inner-text">
+                    <p style="font-family: Proxima Nova;font-size: 20px;line-height: 32px;color: rgba(20, 20, 20, 0.64); padding-top: 20px; padding-left: 20px; padding-right: 30px; ">We find the best influencers for your brand and campaign requirements.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+</section>
+<section id="About-Us"style="padding-top: 140px;text-align: center">
+
+    <div class="container">
+        <div style="text-align: center"> <div class="section-text">ABOUT US</div></div>
+        <h1 id="section-p">Why Influencer Marketing?</h1>
+        <p style="  font-family: Proxima Nova;
+    font-size: 28px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #6F6F6F;">Influencer Marketing Is the fastest-growing online customer-acquisition method. It saves a lot of time and money that brands spend for ideation, creation, distribution and placement of their advertisement or other communication content.</p>
+        <div class="row" style="padding-top: 50px">
+
+            <div class="col-md-6" style="padding-top: 80px;">
+                <div class="row" style="padding-top: 50px" >
+                    <h style="font-family: Proxima Nova;
+    font-size: 24px;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #0063FF;
+">Tomson Study</h>
+                    <h1 style="
+    font-family: Proxima Nova;
+    font-size: 32px;
+    line-height: 45px;
+
+padding-bottom: 80px;
+    color: #000000;">Business earn 6x times</h1>
+                    <p1 style=" font-family: Proxima Nova;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(20, 20, 20, 0.64);">Major brands plan to increase spend on influencer marketing. 71% of marketers believe influencer partnerships are good for business. We are your marketers whose mission is to provide you better results out of your marketing budget</p1>
+                </div>
+
+
+            </div>
+            <div class="col-md-6"style="padding-top: 80px;">
+
+                <img src="./images/amy-hirschi-1416708-unsplash-min.png" id="special-img" style="max-width: 100%">
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row" style="padding-top: 80px">
+            <div class="col-md-6">
+
+                <img src="./images/xtra-inc-1413899-unsplash-min.png" id="special-img" style="max-width: 100%">
+
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <h style="
+    font-family: Proxima Nova;
+    font-size: 40px;
+    line-height: 56px;
+padding-top: 20px;
+    color: #000000;">Authenticity, Transparency, and Credibility is the key</h>
+                    <p style="font-family: Proxima Nova;
+    font-size: 20px;
+    line-height: 32px;
+padding-top: 20px;
+
+    color: #6F6F6F;">We are an influencer marketing agency. We believe that for influencer marketing to perform at its best authenticity, transparency, and credibility is the key.</p>
+                    <p style="  font-family: Proxima Nova;
+    font-size: 20px;
+    line-height: 32px;
+
+padding-top: 20px;
+    color: #6F6F6F;">We work with a very chosen set of influencers with very actively engaged audiences. We build long term relationships with brands and our influencers. We believe that trust should be at the center of any kind of collaboration, we aim to be that trust. We highly value time and make sure to optimize the process to save time, money and effort.</p>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+</section>
+<section id="Our-Process"style="padding-top: 90px">
+    <div class="container" style="text-align: center;">
+
+
+        <div style="text-align: center"> <div class="section-text">Our-Process</div></div>
+        <h1 id="section-p">Optimize for Maximum Returns</h1>
+
+
+
+        <div class="row activites-wrapper">
+            <div class="col-md-4 card">
+                <img src="./images/Vector4.png" class= "center" style="padding-top: 20%" >
+                <div class="info">
+                    <h2>Set Goals</h2>
+                    <p>Brand awareness<br>
+                        Sales<br>
+                        Improve ROI<br>
+                        Loyal fanbase<br>
+                        Competition upper-hand</p>
+                </div>
+            </div>
+            <div class="col-md-4  card ">
+                <img src="./images/research_audience.png" class= "center" style="padding-top: 20%" >
+
+                <div class="info">
+                    <h2>Research Audience</h2>
+                    <p>Industry, <br>Demographics, <br>Gender, <br>Personality, etc</p>
+                </div>
+            </div>
+            <div class="col-md-4  card ">
+                <img src="./images/match.png" class= "center" style="padding-top: 20%" >
+
+                <div class="info">
+                    <h2>Influencer Brand Fit</h2>
+
+                    <p>Influencers that fit <br>your brands persona, <br>convey your message <br>in the most authentic <br>and transparent way</p>
+                </div>
+            </div>
+        </div>
+        <div class="row activites-wrapper">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 card">
+                <img src="./images/influencers.png" class= "center" style="padding-top: 20%" >
+
+                <div class="info">
+                    <h2>Campaign</h2>
+                    <p>Strategise, <br>create and <br>curate engaging <br>social-content and theme</p>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4 card">
+
+                <img src="./images/analytics.png" class= "center" style="padding-top: 20%" >
+
+                <div class="info">
+                    <h2>Analytics</h2>
+                    <p style="font-size: 20px">Assess what works <br>and what doesn't work</p>
+                </div>
+            </div>
+
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</section>
+<section id="Contact-us"style="padding-top: 90px;padding-bottom: 40px">
+    <div class="container" style="text-align: center;">
+        <form  method="post" onfocus="this.className='focused'" >
+
+            <div class="row"style="padding-top: 20px">
+
+       <input type="text" class="in-text" id="contactEmail" style="text-align: center;padding:20px;font-size: 20px;border: 2px solid gray;border-radius: 50px" placeholder="Enter your email Address" onfocus="setOnFocus()" >
+            </div>
+
+
+        <div class="row" style="text-align: center;padding-top: 20px">
+                <input type="button" class="button-onclc" value="Get In Touch" onclick="contactForm()"  style="background: #0063FF;padding: 20px; border-radius: 50px;font-size: 20px;color: white;border: 0px!important;" >
+            </div>
+            <div class="row" style="padding-top: 20px;text-align: center"><span id = "emailAlert" style="visibility: hidden; font-family: Proxima Nova;font-size: 20px; line-height: normal;color: #BF1E2E;">Email-ID Mandatory</span></div>
+
+
+
+
+        </form>
+    </div>
+</section>
+<section id="footer"style="padding-top: 90px">
+    <div align="center">  <div class="container"  >
+       <div class="row" style="color: white;font-size: 20px;border-bottom: 2px solid white">
+
+           <div class="col-md-4"style="padding-top: 10px">
+
+
+
+               <img src="./images/mkbhd1.png" style="max-width: 10%">
+
+               <p style="padding-top: 30px;font-size: 15px">6, Dadabhai Nagar Rd,<br>
+                   Old D N Nagar, Munshi Nagar,<br>
+                   Andheri West, Mumbai,<br>
+                   Maharashtra 400053</p>
+           </div>
+
+           <div class="col-md-4" style="padding-top: 10px">
+               <h4>Contact</h4>
+               <i class="fa fa-envelope" style="padding-top: 30px">mail id</i><br>
+               <i class="fa fa-phone" style="padding-top: 30px">+91 89011 24024</i>
+           </div>
+
+           <div class="col-md-4" style="padding-top: 10px">
+               <h4 style="padding-bottom: 30px">Connect</h4>
+               <a href="#" style="color: white" ><i class="fa fa-facebook" style="padding: 10x;font-size: 20px;"></i></a>
+               <a href="#" style="color: white"><i class="fa fa-instagram" style="padding: 10px;font-size: 20px;"></i></a>
+               <a href="#" style="color: white"><i class="fa fa-twitter" style="font-size: 20px;"></i></a>
+               <a href="#" style="color: white"><i class="fa fa-linkedin" style="padding: 5px;font-size: 20px;"></i></a>
+           </div>
+       </div>
+        <div class="row" style="color: white;font-size: 20px;text-align: center;padding-top: 20px">
+
+            &copy 2019 Publishing Infinity Pvt. Ltd
+        </div>
+
+
+        </div></div>
+</section>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Contact form JavaScript -->
+<script src="js1/jqBootstrapValidation.js"></script>
+<script src="js1/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js1/agency.min.js"></script>
+
+</body>
+</html>

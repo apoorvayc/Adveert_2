@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet">
+	<link rel="icon" type="image/png" href="../images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src = "../js/form.js"></script>
+</head>
+<body>
+
+
+
+
+<div>
+	<div>
+	<form>
+		<fieldset class="loginForm">
+			<span style="color: black;">Username</span>
+			<span id = "emailAlert" style="color:YELLOW;visibility: hidden;">Username Mandatory</span>
+			<br><input type = "text" id = "loginEmail" onfocus="setOnFocus()"><br>
+			<span style="color: black;">Password</span>
+			<span id = "queryAlert" style="color:YELLOW;visibility: hidden;">Password Mandatory</span>
+			<br><input id = "loginPass" type = "password" onfocus="setOnFocus()"><br>
+			<span style="color: WHITE;">Captcha Code</span><span id = "captchaAlert" style="color:YELLOW;visibility: hidden;">Captcha Mandatory</span><br>
+			<span style="color: WHITE;">78+56</span><br>
+			<br><input id = "loginCaptcha" type = "text" onfocus="setOnFocus()"><br>
+			<input type="button" class = "submitButton" onclick="loginForm()" value = "Log In">
+			<input type="button" class = "registerButton" onclick="window.location.href = './register.html'" value = "Register"><br>
+		</fieldset>
+	</form>
+	</div>
+</div>
+
+
+</body>
+
